@@ -11,4 +11,12 @@
 #
 
 # Modify default IP
-#sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.5.5/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/Jarvis-OpenWrt/g' package/base-files/files/bin/config_generate
+sed -i 's/ntp.aliyun.com/time.apple.com/g' package/base-files/files/bin/config_generate
+
+sed -i 's/root:::0:99999:7:::/root:$1$P.6Qc3d6$hITdZTsxZ8yETtK6aX5Ok.:19348:0:99999:7:::/g' package/base-files/files/etc/shadow
+
+
+
+
